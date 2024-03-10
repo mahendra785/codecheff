@@ -1,7 +1,166 @@
+.body{
+    transform: scale(0.8);
+}
 .top{
     background-color: #EFF4F7;
     display:flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
-    margin-top: 0px;
+    padding: 10px;
+    width:100%;
+
 }
+.container{
+  margin: 0px;;
+}
+
+.mulish-font {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+.boat{
+    margin-right: 10px;
+    width:150px; 
+    cursor: pointer;   
+}
+.slides{
+    width:800px;
+}
+.header{
+    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  width:100%}
+.header {
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+
+}
+.header ,.fixed {
+    margin-top: 20px;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+.header-items{
+    margin:18px;
+    font-size: 17px;
+}
+.header-items-div{
+    display: flex;
+    justify-content: center;
+}
+  .hover-div {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    color: #111; 
+    transition: color 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .hover-div::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #f1c40f; 
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+
+  .hover-div:hover {
+    color: #000; 
+    background-color:white
+  }
+
+  .hover-div:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 77vh;
+    border: 1px solid #ccc;
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    transform: translateY(-50%);
+  }
+
+  .carousel-button:hover {
+    background-color: lightgray;
+  }
+
+  .carousel-button.left {
+    left: 0;
+    font-size: 30px;;
+  }
+
+  .carousel-button.right {
+    right: 0;
+  }
+
+  .bestsellers{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+  }
+
+.bestsellers-images{
+  display: flex;
+  flex-direction: row;
+  }
+  .bestselelrs-images-margin{
+    margin:10px;
+    border-radius: 250px;
+    transform: scale(0.85);
+  }
+  .scrollable-div {
+      width: 100%;
+      overflow-x: auto;
+      white-space: nowrap; 
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex; 
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .scrollable-content {
+      flex: 0 0 auto;
+      margin-right: 10px; 
+    }
+
+    .scrollable-content img {
+      border-radius: 30px;
+      height: auto; 
+    }
